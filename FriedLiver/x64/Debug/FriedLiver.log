@@ -1,0 +1,1 @@
+﻿C:\Users\colab\Documents\GitHub\BundleFusion\FriedLiver\FriedLiver.vcxproj(36,5): error MSB4019: The imported project "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\CUDA 7.0.props" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
