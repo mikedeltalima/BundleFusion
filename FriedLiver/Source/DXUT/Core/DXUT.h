@@ -11,10 +11,6 @@
 #error "DXUT requires a Unicode build."
 #endif
 
-#include "dxsdkver.h"
-#if ( _DXSDK_PRODUCT_MAJOR < 9 || _DXSDK_BUILD_MAJOR < 1949 )
-#error The installed DXSDK is out of date.
-#endif
 
 #ifndef STRICT
 #define STRICT
@@ -31,22 +27,18 @@
 #define _WIN32_WINNT   0x0600
 #endif
 
-// #define DXUT_AUTOLIB to automatically include the libs needed for DXUT 
-#ifdef DXUT_AUTOLIB
+
 #pragma comment( lib, "dxerr.lib" )
 #pragma comment( lib, "dxguid.lib" )
 #pragma comment( lib, "d3d9.lib" )
-#if defined(DEBUG) || defined(_DEBUG)
 #pragma comment( lib, "d3dx9d.lib" )
 #pragma comment( lib, "d3dx11d.lib" )
-#else
 #pragma comment( lib, "d3dx9.lib" )
 #pragma comment( lib, "d3dx11.lib" )
-#endif
 #pragma comment( lib, "d3dcompiler.lib" )
 #pragma comment( lib, "winmm.lib" )
 #pragma comment( lib, "comctl32.lib" )
-#endif
+
 
 #pragma warning( disable : 4100 ) // disable unreference formal parameter warnings for /W4 builds
 
