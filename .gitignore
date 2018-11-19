@@ -4,3 +4,5 @@ FriedLiver/x64
 external/mLibExternal/libsWindows
 external/mLibExternal/libsLinux
 external/mLibExternal/libsOSX
+
+*.pdb
